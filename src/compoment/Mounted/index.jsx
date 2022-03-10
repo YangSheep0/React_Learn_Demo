@@ -17,7 +17,7 @@ class MountDemo extends React.Component {
     //已更新
     componentDidUpdate(props, state, height) {
         console.log(props, state, height);
-        this.state.listDOM.scrollTop =this.state.listDOM.scrollTop + this.state.listDOM.scrollHeight - height;
+        // this.state.listDOM.scrollTop =this.state.listDOM.scrollTop + this.state.listDOM.scrollHeight - height;
     }
     componentDidMount() {
         console.log('componentDidMount');

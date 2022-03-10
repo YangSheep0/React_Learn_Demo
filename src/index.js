@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import MountDemo from './compoment/Mounted';
+import APP from './App';
   
   ReactDOM.render(
-    <MountDemo />,
+    <APP />,
     document.getElementById('root')
   );
  
