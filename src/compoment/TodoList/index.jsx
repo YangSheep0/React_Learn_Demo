@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import Footer from './Footer';
 import Header from './Header';
 import List from './List';
-import './todolist.less'
+import './todolist.scss'
 class TodoList extends Component {
     render() {
         return (
-            <div>
+            <div className='box'>
                 <Header/>
                 <List/>
                 <Footer/>
