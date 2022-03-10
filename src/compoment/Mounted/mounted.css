@@ -1,0 +1,11 @@
+.a {
+    width: 300px;
+    height: 90px;
+    text-align: center;
+    background-color: pink;
+    overflow: auto;
+}
+.b { 
+    height: 30px;
+
+}
