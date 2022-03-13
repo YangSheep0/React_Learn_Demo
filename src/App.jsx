@@ -1,11 +1,13 @@
 import React, { Component } from 'react'
-import AjaxDemo from './compoment/AjaxDemo'
+import PubSubJS from './compoment/PubSubJS'
+import Fetch from './compoment/PubSubJS/fetch'
+
 export default class App extends Component {
   render() {
     return (
       <div>
-          <AjaxDemo/>
-
+          <Fetch/>
+          <PubSubJS/>
       </div>
     )
   }
