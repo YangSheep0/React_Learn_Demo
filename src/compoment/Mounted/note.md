@@ -1,4 +1,4 @@
-生命周期：
+## 生命周期：
     Ⅰ.初始化阶段：由ReactDOM.render()触发 --- 初次渲染
         1.constructor()
         2.getDerivedStateFromProps

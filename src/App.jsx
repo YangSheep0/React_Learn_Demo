@@ -1,13 +1,11 @@
 import React, { Component } from 'react'
-import PubSubJS from './compoment/PubSubJS'
-import Fetch from './compoment/PubSubJS/fetch'
+import RDemo from './pages/Router_Demo_02'
 
 export default class App extends Component {
   render() {
     return (
       <div>
-          <Fetch/>
-          <PubSubJS/>
+          <RDemo/>
       </div>
     )
   }
