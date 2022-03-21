@@ -13,6 +13,9 @@
     3).reducer被第一次调用时，是store自动触发的，传递的preState是undefined
 5.在index.js中检测store中状态的改变，一旦发生改变重新渲染<App/>
     备注：redux只负责管理状态，至于状态的改变驱动需自行写
+        * store.subscribe(() => {  
+            this.setState({})
+        })
 ## 求和案例DEMO2 
     新增文件：
     1).count_action.js 专门用于创建action对象
@@ -22,6 +25,11 @@
     2).何时需要异步action：想要对其状态进行操作，但具体数据靠异步返回。
     3).具体编码：
         1.yarn add redux-thunk 并配置在store中
+            -详细配置：
+                1.import { createStore ,applyMiddleware} from 'redux'
+                2.import thunk from 'redux-thunk'
+                3.createStore(countReducer,applyMiddleware(thunk))
+                
         2.创建action的函数不再返回一般对象，而是函数，该函数中写异步
         3.异步任务有结果后，分发一个同步的action去真正操作数据
     4).备注：异步action不是必须，可先调异步再分发同步action

@@ -1,3 +1,4 @@
+/* redux Demo store配置 */
 
 //引入createStore，创建redux中最核心的store对象
 import { createStore ,applyMiddleware} from 'redux'
