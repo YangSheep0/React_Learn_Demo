@@ -1,13 +1,15 @@
 import React, { Component } from 'react'
-import ReduxDemo from './pages/react_redux_Demo_01/countContainer'
-import store from './rudex/store'
+import Count from './pages/react_redux_Demo_02/Containers/Count'
+import Person from './pages/react_redux_Demo_02/Containers/Person'
 export default class App extends Component {
 
   render() {
     return (
       <div>
         {/* 给容器组件传递store */}
-        <ReduxDemo store={store} />
+        <Count />
+        <hr/>
+        <Person />
       </div>
     )
   }

@@ -4,16 +4,20 @@ import APP from './App';
 
 import store from './rudex/store'
 
+import { Provider } from 'react-redux'
 
 ReactDOM.render(
-  <APP />,
+  
+  <Provider store={store}>
+    <APP />
+  </Provider>,
   document.getElementById('root')
 )
 
-store.subscribe(() => {
+/* store.subscribe(() => {
   ReactDOM.render(
     <APP />,
     document.getElementById('root')
   )
-})
+}) */
 
